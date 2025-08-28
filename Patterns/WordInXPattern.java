@@ -21,14 +21,14 @@ public class WordInXPattern {
 
         for (int j = 0 ; j < str.length(); j++){
             for (int i = 0 ; i < str.length() ; i++){
-                if (start!=i && end!=i){
-                    System.out.print(" ");
-                }
-                else if(i == start){
+                if(i == start){
                     System.out.print(str.charAt(start));
                 }
                 else if(i == end){
                     System.out.print(str.charAt(end));
+                }
+                else{
+                    System.out.print(" ");
                 }
             }
             System.err.println();
