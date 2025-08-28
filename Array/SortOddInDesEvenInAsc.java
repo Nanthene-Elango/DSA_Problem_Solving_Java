@@ -8,12 +8,15 @@ public class SortOddInDesEvenInAsc {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+        
         int size;
+        
         System.out.println("Enter the size of array: ");
         size = input.nextInt();
 
         int arr[] = new int[size];
         System.out.println("Enter the elements of array: ");
+        
         for (int i = 0; i < size; i++) {
             arr[i] = input.nextInt();
         }
@@ -23,6 +26,7 @@ public class SortOddInDesEvenInAsc {
         System.out.println("Array after sorting: " + Arrays.toString(arr));
 
         input.close();
+
     }
 
     private static int[] sortInSpecificOrder(int[] arr) {
@@ -51,9 +55,9 @@ public class SortOddInDesEvenInAsc {
             i++;
             j--;
         }
-        
-
+    
         return arr;
+
     }
 }
 
